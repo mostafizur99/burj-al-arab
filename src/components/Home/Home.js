@@ -3,11 +3,6 @@ import { Row } from 'react-bootstrap';
 import Room from '../Room/Room';
 
 const Home = () => {
-    // const style = {
-    //     display: 'flex',
-    //     margin: '40px',
-    //     justifyContent: 'space-between'
-    // }
     const rooms = [
         {
             title: 'Standard Single Room',
@@ -41,8 +36,7 @@ const Home = () => {
         }
     ]
     return (
-        // <div style={style}>
-        <div className="mt-5">
+        <div className="mt-5 container">
             <Row xs={1} md={3} className="g-4">
                 {
                     rooms.map(room => <Room key={room.bedType} room={room}></Room>)
